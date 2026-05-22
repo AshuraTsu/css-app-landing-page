@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6F6FB;
+}
+
+.dev1-container {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.nav-section {
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    gap: 10px;
+
+}
+
+.navbar {
+    width: 100%;
+    padding: 12px 80px 12px 80px;
+    background-color: white;
+    border-radius: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-basis: 20%;
+    gap: 40px;
+}
+
+.hero-space {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-tag {
+    padding: 8px 20px;
+    border-radius: 999px;
+    color: #5E44FF;
+    background-color: #563AFF1A;
+    display: flex;
+}
+
+.hero-title {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.hero-title h1 {
+    font-size: 6rem;
+}
+
+.hero-title span {
+    color: #5E44FF;
+}
+
+.hero-title p {
+    font-weight: 600;
+    font-size: 1.9rem;
+}
+
+.hero-btn { 
+    color: white;
+    background-color: #1A1A2C;
+    padding: 16px 36px;
+    border: none;
+    border-radius: 16px;
+    display: flex;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: #494963;
+}
