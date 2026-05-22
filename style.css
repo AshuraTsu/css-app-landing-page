@@ -15,6 +15,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    gap: 120px;
 }
 
 .nav-section {
@@ -96,4 +97,80 @@ body {
 
 .hero-btn:hover {
     background-color: #494963;
+}* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 24px;
+}
+
+.featureContainer {
+  display: flex;
+  gap: 20px;
+  height: 272px;
+  width: fit-content;
+}
+
+.featureBox {
+  background-color: rgba(215, 229, 246, 1);
+  border-radius: 24px;
+  padding: 28px;
+  height: 100%;
+  width: 387px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.featureBox--workflows {
+  background-color: rgba(215, 229, 246, 1);
+}
+
+.featureBox--performance {
+  background-color: rgba(216, 224, 252, 1);
+}
+
+.featureBox--interface {
+  background-color: rgba(232, 220, 246, 1);
+}
+
+.iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin: 14px;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.featureName {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(26, 26, 44, 1);
+  line-height: 1.2;
+}
+
+.featureDesc {
+  font-size: 16px;
+  color: rgba(95, 95, 118, 1);
+  line-height: 1.5;
 }
