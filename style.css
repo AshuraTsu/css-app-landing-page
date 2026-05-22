@@ -15,6 +15,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    gap: 120px;
 }
 
 .nav-section {
@@ -103,7 +104,6 @@ body {
 }
 
 .contenter {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
