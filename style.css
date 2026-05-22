@@ -9,12 +9,13 @@ body {
 }
 
 .dev1-container {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
     gap: 120px;
 }
 
@@ -107,7 +108,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 24px;
+  padding: 40px 24px 80px;
 }
 
 .featureContainer {
@@ -174,3 +175,102 @@ body {
   color: rgba(95, 95, 118, 1);
   line-height: 1.5;
 }
+/* 1. Reset พื้นฐานให้ทำงานง่ายขึ้น */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  /* 2. จัดการ Body ให้เป็น Flex Container หลักของหน้าจอ */
+  body {
+    background-color: #f4f6f9;
+    display: flex;
+    flex-direction: column; /* เรียงเนื้อหาจากบนลงล่าง (Main -> Footer) */
+    min-height: 100vh; /* บังคับให้ความสูงอย่างน้อยเท่ากับหน้าจอเสมอ */
+  }
+  
+  /* 3. จัดการการ์ดให้อยู่ "กึ่งกลางหน้าจอ" */
+  .container {
+    flex: 1; /* สำคัญมาก! สั่งให้กล่องนี้ขยายตัวกินพื้นที่ที่เหลือทั้งหมด เพื่อดัน Footer ลงไปล่างสุด */
+    display: flex;
+    justify-content: center; /* จัดกึ่งกลางแนวนอน (แกนหลัก) */
+    align-items: center; /* จัดกึ่งกลางแนวตั้ง (แกนรอง) */
+    padding: 20px;
+  }
+  
+  /* 4. ตกแต่งกล่องฟอร์ม (Card) */
+  .card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  .card h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #1a1a2e;
+  }
+  
+  /* 5. จัดเรียงฟอร์มด้านในให้เป็นแนวตั้ง */
+  form {
+    display: flex;
+    flex-direction: column; /* เปลี่ยนแกนหลักให้เรียงจากบนลงล่าง */
+    gap: 16px; /* สร้างระยะห่างระหว่าง input แต่ละก้อนโดยไม่ต้องใช้ margin */
+  }
+  
+  /* 6. จัดกลุ่ม Label กับ Input ให้อยู่ชิดกัน */
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+  }
+  
+  label {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  input, textarea {
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 14px;
+    background-color: #1a1a2e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* 7. จัดการ Footer ให้อยู่ซ้าย-ขวา */
+  footer {
+    display: flex;
+    justify-content: space-between; /* ดันเนื้อหาให้ออกห่างจากกันไปชิดขอบซ้าย-ขวา */
+    align-items: center;
+    padding: 24px 40px;
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 24px; /* สร้างช่องไฟระหว่างเมนูลิงก์ */
+  }
+  
+  .footer-right a {
+    text-decoration: none;
+    color: #1a1a2e;
+    font-weight: 600;
+  }
