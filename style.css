@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+.contenter {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 24px;
+}
+
 .featureContainer {
   display: flex;
   gap: 20px;
@@ -17,6 +25,21 @@
   padding: 28px;
   height: 100%;
   width: 387px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.featureBox--workflows {
+  background-color: rgba(215, 229, 246, 1);
+}
+
+.featureBox--performance {
+  background-color: rgba(216, 224, 252, 1);
+}
+
+.featureBox--interface {
+  background-color: rgba(232, 220, 246, 1);
 }
 
 .iconBox {
@@ -30,6 +53,26 @@
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
+  margin: 14px;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.featureName {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(26, 26, 44, 1);
+  line-height: 1.2;
+}
+
+.featureDesc {
+  font-size: 16px;
+  color: rgba(95, 95, 118, 1);
+  line-height: 1.5;
 }
