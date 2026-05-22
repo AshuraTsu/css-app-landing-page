@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.featureContainer {
+  display: flex;
+  gap: 20px;
+  height: 272px;
+  width: fit-content;
+}
+
+.featureBox {
+  background-color: rgba(215, 229, 246, 1);
+  border-radius: 24px;
+  padding: 28px;
+  height: 100%;
+  width: 387px;
+}
+
+.iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
